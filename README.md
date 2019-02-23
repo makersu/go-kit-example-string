@@ -1,6 +1,31 @@
 # go-kit-example-string
 
-## Create a new service
+## PartI. Create Stringsvc1
+
+## Test Stringsvc1
+```
+github.com/makersu/go-kit-example-string/stringsvc1 > go run main.go
+
+curl -XPOST -d'{"s":"hello, world"}' localhost:8080/uppercase
+{"v":"HELLO, WORLD"}
+curl -XPOST -d'{"s":"hello, world"}' localhost:8080/count
+{"v":12}
+```
+
+## PartI. Create Stringsvc2
+## Test Stringsvc2
+```
+~/go/src/github.com/makersu/go-kit-example-string/stringsvc2> ./stringsvc2 
+
+```
+
+## Install kit
+```
+go-kit-example-hello> go get github.com/go-kit/kit
+go-kit-example-hello> go get github.com/kujtimiihoxha/kit
+```
+
+## Create a new service by kit
 ```
 # kit new service string
 > kit n s string
